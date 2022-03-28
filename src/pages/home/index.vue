@@ -20,12 +20,14 @@
 <script>
 export default {
   mounted() {
-    let externalScript = document.createElement("script");
-    externalScript.setAttribute(
-      "src",
-      "src/assets/js/main.js"
-    );
-    document.head.appendChild(externalScript);
+    var typed = new Typed("#typed", {
+  stringsElement: "#typed-strings",
+  loop: true,
+  typeSpeed: 100,
+  backSpeed: 50,
+  backDelay: 2000,
+});
+
   },
 };
 </script>
